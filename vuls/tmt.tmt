@@ -1,0 +1,12 @@
+Scan Summary
+================
+[Reboot Required] najran        ubuntu20.04     1713 installed
+[Reboot Required] abha          ubuntu20.04     1708 installed
+minus                           alma9.2         359 installed, 0 updatable
+angle                           alma9.2         1210 installed, 5 updatable
+localhost                       alma8.8         1505 installed, 9 updatable
+cattle                          alma8.8         1505 installed, 9 updatable
+fog                             alma8.8         1403 installed, 0 updatable
+gap                             alma8.8         1294 installed, 0 updatable
+wax                             alma8.8         1689 installed, 0 updatable
+proton                          centos7.9.2009  1657 installed, 0 updatable
