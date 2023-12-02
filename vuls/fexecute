@@ -1,0 +1,5 @@
+ssh saua@angle -i ~saua/.ssh/id_rsa 'sudo sh -c "yum clean all  ; yum update -y ; uname -a"'
+ssh saua@gap -i ~saua/.ssh/id_rsa 'sudo sh -c "yum clean all  ; yum update -y ; uname -a"'
+ssh saua@proton -i ~saua/.ssh/id_rsa 'sudo sh -c "yum clean all  ; yum update -y ; uname -a"'
+ssh saua@fog -i ~saua/.ssh/id_rsa 'sudo sh -c "yum clean all  ; yum update -y ; uname -a"'
+ssh saua@wax -i ~saua/.ssh/id_rsa 'sudo sh -c "yum clean all  ; yum update -y ; uname -a"'

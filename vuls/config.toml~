@@ -1,0 +1,51 @@
+
+[servers]
+
+[servers.localhost]
+host = "localhost"
+port = "local" 
+[servers.angle]
+host = "192.168.86.38"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.minus]
+host = "192.168.86.42"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.fog]
+host = "192.168.86.43"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.wax]
+host = "192.168.86.44"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.abha]
+host = "192.168.86.51"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.proton]
+host = "192.168.86.52"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.gap]
+host = "192.168.86.53"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.cattle]
+host = "192.168.86.54"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
+[servers.najran]
+host = "192.168.86.55"
+port = "22"
+user = "saua"
+keyPath = "/home/saua/.ssh/id_rsa"
