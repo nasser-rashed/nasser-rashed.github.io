@@ -1,0 +1,16 @@
+git status
+git add .
+git init . 
+git reflog
+git log
+git checkout
+git git commit -m ''
+git push
+git pull
+git clone
+git rm --cached filename
+git reset logid --hard
+git merge branchname
+git branch branchname
+git switch branchname
+git remote -v
