@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #text-to-speech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #text {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #speak-button {
+      padding: 10px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #voice-select {
+      width: 100px;
+      padding: 5px;
+      border: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="text-to-speech">
+    <textarea id="text"></textarea>
+    <select id="voice-select">
+      <option value="">Select Voice...</option>
+      <option value="voice1">Voice 1</option>
+      <option value="voice2">Voice 2</option>
+      <!-- Add more voices as needed -->
+    </select>
+    <button id="speak-button">Speak</button>
+  </div>
+
+  <script>
+    let textArea = document.getElementById("text");
+    let speakButton = document.getElementById("speak-button");
+    let voiceSelect = document.getElementById("voice-select");
+
+    // Get the list of available voices
+    let voices = speechSynthesis.getVoices();
+
+    // Populate the dropdown menu with the list of available voices
+    voices.forEach((voice) => {
+      let option = document.createElement("option");
+      option.text = voice.name;
+      option.value = voice.index;
+      voiceSelect.appendChild(option);
+    });
+
+    speakButton.addEventListener("click", () => {
+      // Get the selected voice index
+      let selectedVoiceIndex = parseInt(voiceSelect.value);
+
+      // Get the text and speak it using the selected voice
+      let message = new SpeechSynthesisUtterance();
+      message.text = textArea.value;
+      message.voice = voices[selectedVoiceIndex];
+      window.speechSynthesis.speak(message);
+    });
+  </script>
+</body>
+</html>
