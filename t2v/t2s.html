@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text to Speech</title>
+  <style>
+    #text-to-speech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #text {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #speak-button {
+      padding: 10px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="text-to-speech">
+    <textarea id="text"></textarea>
+    <button id="speak-button">Speak</button>
+  </div>
+
+  <script>
+    let textArea = document.getElementById("text");
+    let speakButton = document.getElementById("speak-button");
+
+    speakButton.addEventListener("click", () => {
+      let message = new SpeechSynthesisUtterance();
+      message.text = textArea.value;
+      speechSynthesis.speak(message);
+    });
+  </script>
+</body>
+</html>
