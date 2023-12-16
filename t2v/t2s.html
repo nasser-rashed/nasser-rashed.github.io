@@ -30,16 +30,25 @@
   <div id="text-to-speech">
     <textarea id="text"></textarea>
     <button id="speak-button">Speak</button>
+    <button id="stop-button">Cancel</button>
   </div>
 
   <script>
     let textArea = document.getElementById("text");
     let speakButton = document.getElementById("speak-button");
+    let stopButton = document.getElementById("stop-button");
 
     speakButton.addEventListener("click", () => {
       let message = new SpeechSynthesisUtterance();
       message.text = textArea.value;
       speechSynthesis.speak(message);
+    });
+
+    stopButton.addEventListener("click", () => {
+//      let message = new SpeechSynthesisUtterance();
+//      message.text = textArea.value;
+ //     speechSynthesis.speak(message);
+	    speechSynthesis.cancel()
     });
   </script>
 </body>
