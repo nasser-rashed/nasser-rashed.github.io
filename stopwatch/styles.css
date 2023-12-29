@@ -1,0 +1,17 @@
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #stopwatch {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
