@@ -4,20 +4,20 @@ let timerInterval;
 let isRunning = false;
 
 function startStopwatch() {
-    if (!isRunning) {
-  startTime = Date.now() - elapsedTime;
-  timerInterval = setInterval(function() {
-    elapsedTime = Date.now() - startTime;
-    displayTime(elapsedTime);
-  }, 10);
-  isRunning = true;
-}
+  if (!isRunning) {
+    startTime = Date.now() - elapsedTime;
+    timerInterval = setInterval(function () {
+      elapsedTime = Date.now() - startTime;
+      displayTime(elapsedTime);
+    }, 10);
+    isRunning = true;
+  }
 }
 
 function stopStopwatch() {
-    if (isRunning) {
-  clearInterval(timerInterval);
-  isRunning = false;
+  if (isRunning) {
+    clearInterval(timerInterval);
+    isRunning = false;
   }
 }
 
@@ -32,7 +32,7 @@ function displayTime(time) {
   let seconds = Math.floor((time / 1000) % 60);
   let milliseconds = Math.floor((time % 1000) / 10);
 
-  document.getElementById('stopwatch').innerText = 
+  document.getElementById('stopwatch').innerText =
     `${pad(minutes)}:${pad(seconds)}:${pad(milliseconds)}`;
 }
 
