@@ -1,3 +1,3 @@
-function updateD(){
+function updateD() {
 document.getElementById('stopwatch').innerText = "Starting time!";
 }
