@@ -1,1 +1,1 @@
-alert('JS Here.');
+console.log('JS Here.');
