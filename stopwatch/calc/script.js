@@ -1,5 +1,7 @@
 console.log("JS started.");
+a = document.querySelectorAll("input");
+console.log(a);
 function add(sign)
 {
-    a = 
+    a = document.querySelectorAll("input");
 }
