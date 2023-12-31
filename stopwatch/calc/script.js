@@ -1,3 +1,3 @@
 function updateD() {
-document.getElementById('stopwatch').innerText = "Starting time!";
+console.log(document.getElementsByClassName("container")) ; //document.getElementById('stopwatch').innerText = "Starting time!";
 }
